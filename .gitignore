@@ -1,0 +1,52 @@
+# Build outputs
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# NuGet
+.nuget/
+packages/
+*.nupkg
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.suo.assets
+*.userosscache
+*.sln.docstates
+
+# Editor
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# User-specific files
+Properties/launchSettings.json
+
+# Secrets (keep appsettings.json if it has no secrets)
+appsettings.*.json
+!appsettings.json
+
+# MSBuild
+*.g.cs
+*.g.i.cs
+*.g.targets
+*.g.props
+
+# Pub/sub specific
+*.userprefs
