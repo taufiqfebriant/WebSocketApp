@@ -2,6 +2,13 @@
 
 A simple WebSocket echo server built with ASP.NET Core 8.
 
+## Live Demo
+
+**Server:** http://34.143.132.27:6000  
+**WebSocket:** ws://34.143.132.27:6000/ws
+
+Connect using wscat: `wscat -c ws://34.143.132.27:6000/ws`
+
 ## Prerequisites
 
 - .NET 8 SDK
@@ -149,14 +156,16 @@ journalctl -u websocket -f
 Local access:
 
 ```
-ws://localhost:6000
+ws://localhost:6000/ws
 ```
 
 External access:
 
 ```
-ws://<YOUR_EXTERNAL_IP>:6000
+ws://34.143.132.27:6000/ws
 ```
+
+**Deployed Server:** http://34.143.132.27:6000
 
 ---
 
@@ -182,13 +191,13 @@ Using `wscat`:
 
 ```bash
 npm install -g wscat
-wscat -c ws://localhost:6000
+wscat -c ws://localhost:6000/ws
 ```
 
 Or from external:
 
 ```bash
-wscat -c ws://<YOUR_EXTERNAL_IP>:6000
+wscat -c ws://34.143.132.27:6000/ws
 ```
 
 ---
